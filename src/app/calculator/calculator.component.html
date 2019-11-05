@@ -1,0 +1,72 @@
+<div class="container">
+  <h1>Calcolatrice</h1>
+  <div class="row">
+    <div class="col-sm-3 mt-2">
+      <h1>{{risultato}}</h1>
+      <h1>{{this.espressione}}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 mt-2"></div>
+        <div class="col-sm-2 mt-2">
+      <button class="btn  btn-sm" (click)="cancella()"> CE </button>
+    </div>
+    <div class="col-sm-2 mt-2">
+          <button class="btn btn-sm" (click)="chEsp('/')"> / </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2 mt-2">
+      <button class="btn  btn-sm" (click)="chEsp('1')"> 1 </button>
+    </div>
+    <div class="col-sm-2 mt-2">
+          <button class="btn btn-sm" (click)="chEsp('2')"> 2 </button>
+    </div>
+    <div class="col-sm-2 mt-2">
+          <button class="btn btn-sm" (click)="chEsp('3')"> 3 </button>
+    </div>
+        <div class="col-sm-2 mt-2">
+          <button class="btn btn-sm" (click)="chEsp('*')"> x </button>
+    </div>
+  </div>
+  <div class="row"> 
+    <div class="col-sm-2 mt-2">
+      <button class="btn  btn-sm" (click)="chEsp('4')"> 4 </button>
+    </div>
+    <div class="col-sm-2 mt-2">
+          <button class="btn btn-sm" (click)="chEsp('5')"> 5 </button>
+    </div>
+    <div class="col-sm-2 mt-2">
+          <button class="btn btn-sm" (click)="chEsp('6')"> 6 </button>
+    </div>
+    <div class="col-sm-2 mt-2">
+          <button class="btn btn-sm" (click)="chEsp('-')"> - </button>
+    </div>
+  </div>
+  <div class="row"> 
+    <div class="col-sm-2 mt-2">
+      <button class="btn  btn-sm" (click)="chEsp('7')"> 7 </button>
+    </div>
+    <div class="col-sm-2 mt-2">
+          <button class="btn btn-sm" (click)="chEsp('8')"> 8 </button>
+    </div>
+    <div class="col-sm-2 mt-2">
+          <button class="btn btn-sm" (click)="chEsp('9')"> 9 </button>
+    </div>
+    <div class="col-sm-2 mt-2">
+      <button class="btn  btn-sm" (click)="chEsp('+')"> + </button>
+    </div>
+  </div>
+    <div class="row "> 
+      <div class="col-sm-2 mt-2"></div>
+    <div class="col-sm-2 mt-2">
+      <button class="btn  btn-sm" (click)="chEsp('0')"> 0 </button>
+    </div>
+    <div class="col-sm-2 mt-2">
+      <button class="btn  btn-sm" (click)="chEsp(',')"> , </button>
+    </div>
+    <div class="col-sm-2 mt-2">
+      <button class="btn  btn-sm" (click)="calcolatrice()"> = </button>
+    </div>
+  </div>
+</div>
