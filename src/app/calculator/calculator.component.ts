@@ -1,27 +1,31 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-calculator',
-  templateUrl: './calculator.component.html',
-  styleUrls: ['./calculator.component.css']
+  selector: "app-calculator",
+  templateUrl: "./calculator.component.html",
+  styleUrls: ["./calculator.component.css"]
 })
 export class CalculatorComponent {
-  espressione ="";
-  risultato = "0";
+  espressione = "";
+  risultato =  "0";
   ris = 0;
-  cancella(){
+  cancella() {
     this.risultato = "0";
     this.espressione = "";
   }
   calcolatrice() {
-    this.risultato =  eval(this.espressione);
-  }
-  chEsp(valore:string){
+    this.risultato = eval(this.espressione);
     
-    if(this.ris == 0 &&  (valore == "/" || valore == "*")){
-      this.espressione = "non è possibile";
+  }
+  chEsp(valore: string) {
+    if (this.ris == 0 && (valore == "/" || valore == "*")) {
+      this.espressione = "non puoi farlo broh";
     }
-    this.ris++
+    if(valore == '^'){
+      this.espressione = Math.pow(this.espressione, valore);
+    }
+
+    this.ris++;
     this.espressione = this.espressione + valore;
   }
 }

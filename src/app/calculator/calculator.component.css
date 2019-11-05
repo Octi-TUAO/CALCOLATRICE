@@ -1,0 +1,29 @@
+.results{
+  color: rgb(0, 124, 124)
+}
+.gen{
+  border: 1px solid rgb(0, 124, 124);
+  padding: 8%
+}
+
+.gen1{
+  border-top: 1px solid rgb(0, 124, 124);
+  border-left: 1px solid rgb(0, 124, 124);
+  border-right: 1px solid rgb(0, 124, 124);
+  padding: 1%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+.an{
+  color:rgb(0, 124, 124)
+}
+button{
+  font-size: 120%;
+  display: block;
+  width: 100%;
+}
+
+button:hover{
+  background-color: rgba(128, 128, 128, 0.178);
+}
